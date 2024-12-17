@@ -4,7 +4,9 @@
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
     </BehaviorDescriptions>
-    <Dialogs />
+    <Dialogs>
+        <Dialog name="ExampleDialog" src="behavior_1/ExampleDialog/ExampleDialog.dlg" />
+    </Dialogs>
     <Resources>
         <File name="index" src="behavior_1/index.html" />
         <File name="bootstrap-theme" src="behavior_1/lib/bootstrap-3.4.1/css/bootstrap-theme.css" />
@@ -42,7 +44,14 @@
         <File name="naoth-32" src="behavior_1/img/naoth-32.png" />
         <File name="naoth-96" src="behavior_1/img/naoth-96.png" />
         <File name="admin" src="behavior_1/admin.html" />
+        <File name="mode" src="behavior_1/mode.html" />
+        <File name="active" src="behavior_1/mode/active.html" />
+        <File name="interactive" src="behavior_1/mode/interactive.html" />
+        <File name="static" src="behavior_1/mode/static.html" />
+        <File name="mode_static" src="behavior_1/mode_static.html" />
     </Resources>
-    <Topics />
+    <Topics>
+        <Topic name="ExampleDialog_enu" src="behavior_1/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
+    </Topics>
     <IgnoredPaths />
 </Package>
