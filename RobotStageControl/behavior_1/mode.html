@@ -17,6 +17,7 @@
   
     <script>
       function set_mode(mode) { send("ALMemory", ["raiseEvent", "scioi_mode", mode]); }
+      function run_nvi(mode) { send("ALMemory", ["raiseEvent", "scioi_nvi", mode]); }
       
       function send(proxy, call, handler) {
         var xhr = new XMLHttpRequest();
@@ -81,15 +82,25 @@
 
     <div class="center-container">
       <div class="center-content">
-        <a class="btn btn-danger dynamic-button" href="#" role="button" onclick="set_mode('static'); return false">
-          Static
-        </a>
-        <a class="btn btn-warning dynamic-button" href="#" role="button" onclick="set_mode('active'); return false">
-          Active
-        </a>
-        <a class="btn btn-success dynamic-button" href="#" role="button" onclick="set_mode('interactive'); return false">
-          Interactive
-        </a>
+        <div>
+          <a class="btn btn-danger dynamic-button" href="#" role="button" onclick="set_mode('static'); return false">
+            Static
+          </a>
+          <a class="btn btn-warning dynamic-button" href="#" role="button" onclick="set_mode('active'); return false">
+            Active
+          </a>
+          <a class="btn btn-success dynamic-button" href="#" role="button" onclick="set_mode('interactive'); return false">
+            Interactive
+          </a>
+        </div>
+        <div>
+          <a class="btn btn-danger dynamic-button" href="#" role="button" onclick="run_nvi('high'); return false">
+            Run NVI High
+          </a>
+          <a class="btn btn-warning dynamic-button" href="#" role="button" onclick="run_nvi('low'); return false">
+            Run NVI Low
+          </a>
+        </div>
       </div>
     </div>
 

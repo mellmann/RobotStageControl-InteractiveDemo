@@ -49,6 +49,8 @@
         <File name="interactive" src="behavior_1/mode/interactive.html" />
         <File name="static" src="behavior_1/mode/static.html" />
         <File name="mode_static" src="behavior_1/mode_static.html" />
+        <File name="high" src="behavior_1/nvi/high.html" />
+        <File name="low" src="behavior_1/nvi/low.html" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="behavior_1/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
