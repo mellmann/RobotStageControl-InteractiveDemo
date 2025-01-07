@@ -30,6 +30,30 @@ Original code:
 https://github.com/BerlinUnited/RoboTheater/tree/master/scenes_for_stage/RemoteStageControl
 
 
+### Non-Verbal Interaction (NVI)
+
+Play NVI animations.
+
+### For Testing 
+
+1. open your favorite browser
+2. open the address
+   ```
+   http://<robot.ip>:8000/mode.html
+   ```
+3. clock buttons to play NVI animations.
+
+> [!WARNING]  
+> Don't switch the modes too fast. Give pepper some time (~5s) so change the mode before switching to another.
+
+
+The modes can also be switched by simply calling (triffering) the following corresponding url's:
+
+```
+http://<robot.ip>:8000/nvi/high.html
+http://<robot.ip>:8000/nvi/low.html
+```
+
 ## Interactive Demo
 
 The interactive demo allowws to manually switch between three intective modes of pepper `static`, `active` and `interactive`.
