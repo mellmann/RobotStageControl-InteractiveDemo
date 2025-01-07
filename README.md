@@ -33,6 +33,25 @@ https://github.com/BerlinUnited/RoboTheater/tree/master/scenes_for_stage/RemoteS
 ## Interactive Demo
 
 The interactive demo allowws to manually switch between three intective modes of pepper `static`, `active` and `interactive`.
+Activation of a mode is annonced by a coresponding voice massage and activates of deactivates a number of interactive features, as listed below:
+
+* `static` ("disengaged")
+  - neutral stand pose
+  - no reaction to stimuly
+  - no movement
+  - no blinking
+* `active` ("engaged")
+  - eyes blink
+  - head follows a detected face
+  - turn head to auditory stimuly, e.g., "hey pepper"
+  - slight background movements with the hands
+* `interactive` ("super engaged")
+  - eyes blink
+  - body and head follow a detected face
+  - active listeting and following auditory stimuly
+  - reaction with head and sound to auditory stimuly
+  - active hand movements
+
 
 There are two ways to switch the modes:
 
