@@ -52,28 +52,46 @@
         xhr.send(data);
       }  
     </script>
+  
+    <style>
+    html, body {
+      height: 100%; /* Make sure the body takes the full height */
+    }
+    .center-container {
+      height: 100%; /* Make the container take the full height */
+      display: table; /* Use table display for vertical alignment */
+      width: 100%; /* Make it take full width */
+      text-align: center; /* Center items horizontally */
+    }
+    .center-content {
+      display: table-cell; /* Vertically align content */
+      vertical-align: middle;
+    }
+    .btn-spacing {
+      margin-bottom: 15px; /* Add spacing between buttons */
+    }
+    .dynamic-button {
+      width:30%;
+    }
+  </style>
+  
   </head>
   
   <body>
 
-    <div class="container-fluid">
-      <div class="row">
-      
-      <!-- (animated) say -->
-      <div class="col-md-6">
-        <a class="btn btn-success" href="#" role="button" onclick="set_mode('static'); return false">
+    <div class="center-container">
+      <div class="center-content">
+        <a class="btn btn-danger dynamic-button" href="#" role="button" onclick="set_mode('static'); return false">
           Static
         </a>
-        <a class="btn btn-warning" href="#" role="button" onclick="set_mode('active'); return false">
+        <a class="btn btn-warning dynamic-button" href="#" role="button" onclick="set_mode('active'); return false">
           Active
         </a>
-        <a class="btn btn-danger" href="#" role="button" onclick="set_mode('interactive'); return false">
+        <a class="btn btn-success dynamic-button" href="#" role="button" onclick="set_mode('interactive'); return false">
           Interactive
         </a>
       </div>
-      
-      </div><!-- /.row -->
-    </div><!-- /.container -->
+    </div>
 
 
     <!-- Bootstrap core JavaScript
