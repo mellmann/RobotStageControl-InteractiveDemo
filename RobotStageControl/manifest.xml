@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="remote-server-v-1-5" version="1.5.0">
+<package version="1.5.0" uuid="remote-server-v-1-5">
  <names>
   <name lang="en_US">RemoteServer-V1.5</name>
  </names>
@@ -12,7 +12,7 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <dialogContent typeVersion="1.0" topicName="ExampleDialog">
+  <dialogContent topicName="ExampleDialog" typeVersion="1.0">
    <topic path="behavior_1/ExampleDialog/ExampleDialog_enu.top" language="en_US"/>
   </dialogContent>
  </contents>
